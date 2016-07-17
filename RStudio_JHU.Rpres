@@ -1,0 +1,43 @@
+Developing Data Products Project Presentation
+========================================================
+author: Amithabh Shrinivas
+date: `r date()`
+autosize: true
+type: typename
+transition: rotate
+Introduction
+========================================================
+
+
+- CO2 dataset available in the base R package is used by the Shiny application
+- The application has 3 tabPanels:
+  - Plots makes scatter plots 
+  - Hypothesis testing
+  - Documentation
+- Inputs used by application: checkboxInput, selectInput, sliderInput and textInput
+- Outputs used: plotOutput, verbatimTextOutput and dataTableOutput
+
+Structure of dataset
+========================================================
+
+```{r}
+str(CO2)
+```
+
+Description of the App
+========================================================
+
+
+- Goal of the app:
+  - To understand the CO2 dataset using exploratory analysis
+  - To make some preliminary statistical analysis
+- Here's the link to my app:  [CO2-DataExplorer](https://amithabh.shinyapps.io/workspace17/)
+- Here's the link to my project files at github:  [DataProducts](https://github.com/Amithabh/Developing-Data-Products)
+
+
+Hypothesis testing
+========================================================
+
+```{r echo=FALSE}
+t.test(CO2$uptake ~ CO2$Type)
+```
