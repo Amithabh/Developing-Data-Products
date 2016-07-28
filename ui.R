@@ -22,7 +22,7 @@ shinyUI(navbarPage("Carbon-dioxide data explorer", theme = shinytheme("united"),
        selectInput("inp3", label = "Color", c("None", "Plant", "Type", "Treatment")),
        selectInput("inp3a", label = "Facet row", c(None = "." ,"Plant", "Type", "Treatment")),
        selectInput("inp3b", label = "Facet column", c(None = ".","Plant", "Type", "Treatment")),
-       selectInput("inp4", label = "Type of fit", c("Smooth", "Linear")),
+       selectInput("inp4", label = "Type of fit", c("None" ,"Smooth", "Linear")),
        sliderInput("inp6", "Point Size", min = 1, max = 5, step = 0.5, value = 1, animate = TRUE),
        textInput("inp7", "Label title of plot")
     ),
