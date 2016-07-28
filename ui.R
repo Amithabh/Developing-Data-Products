@@ -19,9 +19,10 @@ shinyUI(navbarPage("Carbon-dioxide data explorer", theme = shinytheme("united"),
     sidebarPanel(
        selectInput("inp1", label = "Select X-variable", names(dataset)),
        selectInput("inp2", label = "Select Y-variable", names(dataset)),
-       selectInput("inp3", label = "Color", list("Plant", "Type", "Treatment")),
-       checkboxInput("inp4", "smooth"),
-       checkboxInput("inp5", "Confidence band around smooth line"),
+       selectInput("inp3", label = "Color", c("None", "Plant", "Type", "Treatment")),
+       selectInput("inp3a", label = "Facet row", c(None = "." ,"Plant", "Type", "Treatment")),
+       selectInput("inp3b", label = "Facet column", c(None = ".","Plant", "Type", "Treatment")),
+       selectInput("inp4", label = "Type of fit", c("Smooth", "Linear")),
        sliderInput("inp6", "Point Size", min = 1, max = 5, step = 0.5, value = 1, animate = TRUE),
        textInput("inp7", "Label title of plot")
     ),
