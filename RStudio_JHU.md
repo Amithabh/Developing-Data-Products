@@ -13,12 +13,14 @@ Introduction
 - The application has 3 tabPanels:
   - Plots makes scatter plots 
   - Hypothesis testing
-  - Documentation
+  - Documentations
+  
 - Inputs used by application: checkboxInput, selectInput, sliderInput and textInput
 - Outputs used: plotOutput, verbatimTextOutput and dataTableOutput
 
 Structure of dataset
 ========================================================
+
 
 
 ```r
