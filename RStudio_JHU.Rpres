@@ -17,6 +17,7 @@ Introduction
 - Inputs used by application: checkboxInput, selectInput, sliderInput and textInput
 - Outputs used: plotOutput, verbatimTextOutput and dataTableOutput
 
+
 Structure of dataset
 ========================================================
 
